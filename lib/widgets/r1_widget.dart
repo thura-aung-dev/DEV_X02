@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class R1Page extends StatelessWidget {
   const R1Page({super.key});
@@ -11,8 +12,17 @@ class R1Page extends StatelessWidget {
           title: const Text('R1'),
           centerTitle: true,
         ),
-        body: const Center(
-          child: Text('Hi R1 Normal'),
+        body:  Padding(
+          padding: const EdgeInsets.only(top: 30),
+          child: Center(
+            child: Column(
+              children: [
+                const Text('Hi R1 Normal'),
+                ElevatedButton(onPressed: ()=>Get.back(),
+                    child:const Text('Back'))
+              ],
+            ),
+          ),
         ));
   }
 }
