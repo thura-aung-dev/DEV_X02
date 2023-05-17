@@ -7,6 +7,10 @@ class R4Page extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('R4'),
+        centerTitle: true,
+      ),
       body: Center(
         child: Text('Hi!  ${Get.parameters['data']}')
       ),

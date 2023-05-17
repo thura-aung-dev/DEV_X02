@@ -6,9 +6,13 @@ class R1Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return const Scaffold(
-        body: Center(
-      child: Text('Hi R1 Normal'),
-    ));
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('R1'),
+          centerTitle: true,
+        ),
+        body: const Center(
+          child: Text('Hi R1 Normal'),
+        ));
   }
 }

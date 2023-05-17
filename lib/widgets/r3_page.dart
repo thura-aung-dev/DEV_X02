@@ -7,6 +7,10 @@ class R3Page extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
    return Scaffold(
+     appBar: AppBar(
+       title: const Text('R3'),
+       centerTitle: true,
+     ),
      body: Center(
        child: Text('Hi R3 ${Get.arguments['argVal']}'),
      ),
